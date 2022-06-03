@@ -76,7 +76,7 @@ public class ShoppingCartApp {
                     }
                     finalInvoice.getProductInvoiceList().stream().forEach(productInvoice -> System.out.println(productInvoice));
 
-                    System.out.println("Start new Billing  or type exitA");
+                    System.out.println("Start new Billing  or type exit");
                     finalInvoice = new FinalInvoice("Test1", 0, null);
                     productInvoiceService.clearInvoice();
                 }
