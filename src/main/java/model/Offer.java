@@ -8,11 +8,17 @@ public class Offer {
     private Boolean isActive;
 
     public Offer(String productId, int productQty, double offeredUnitPrice, Boolean isActive) {
-        this.productId = productId;
-        this.productQty = productQty;
-        this.offeredUnitPrice = offeredUnitPrice;
-        this.isActive = isActive;
+        if (productQty > 0 && offeredUnitPrice > 0) {
+            this.productId = productId;
+            this.productQty = productQty;
+            this.offeredUnitPrice = offeredUnitPrice;
+            this.isActive = isActive;
+        } else {
+            System.out.println("For Product Id  " + productId + " and unit Price " + productQty +
+                    " and offeredUnitPrice " + offeredUnitPrice + " should be more than 0 ");
+        }
     }
+
 
     public String getProductId() {
         return productId;
