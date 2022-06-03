@@ -26,7 +26,7 @@ ShoppingCart Application is a sample application to calculate total amount of pr
 Clone the project
 
 ```bash
-git clone [https://link-to-project](https://github.com/billoreseema/ShoppingCart-Demo.git)
+git clone [https://github.com/billoreseema/ShoppingCart-Demo.git]
 ```
 
 Go to the project directory
